@@ -1,0 +1,17 @@
+{{>head}}
+{{>header}}
+
+    <h1>Weather details</h1>
+    <p>{{ErrorMessage}}</p>
+    <p>Country: {{location.country}}</p>
+    <p>Name: {{location.name}}</p>
+    <p>Local time: {{location.localtime}}</p>
+    <p>Time zone:{{location.timezone_id}}</p>
+    <p> Current temperature is: {{current.temperature}}C</p>
+    <p>Feels like: {{current.feelslike}} C</p>
+    <p>The weather is currently: {{current.weather_descriptions}}</p>
+    <p>{{dayTime}} Time</p>
+    <img src="{{current.weather_icons}}">
+    
+{{>footer}}
+
