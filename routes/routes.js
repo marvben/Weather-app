@@ -5,7 +5,7 @@ const getWeather = require("../src/utils/weather.js");
 let getIsDayResult = "";
 
 router.get("/", (req, res) => {
-  const place = process.argv[2] || "Kiev";
+  const place = "Kiev";
 
   if (!place) {
     res.send("Please enter name of a place!");
