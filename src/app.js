@@ -1,5 +1,5 @@
-require("dotenv").config({ silent: process.env.NODE_ENV === "production" });
-//require("dotenv").config({ path: __dirname + "/./../.env" });
+//require("dotenv").config({ silent: process.env.NODE_ENV === "production" });
+require("dotenv").config({ path: __dirname + "/./../.env", silent: process.env.NODE_ENV === "production" });
 const express = require("express");
 const path = require("path");
 const routes = require("../routes/routes.js");
