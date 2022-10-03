@@ -4,7 +4,7 @@ const getWeather = require("../src/utils/weather.js");
 //Used to get is_day result from api, passed to all get route, and used to change background color base on root page results
 let getIsDayResult = "";
 
-router.get("/", (req, res) => {
+router.get("", (req, res) => {
   const place = "Kiev";
 
   if (!place) {
