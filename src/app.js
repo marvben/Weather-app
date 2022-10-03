@@ -1,6 +1,6 @@
+const path = require("path");
 require("dotenv").config({ path: __dirname + "/./../.env" });
 const express = require("express");
-const path = require("path");
 const routes = require("../routes/routes.js");
 const hbs = require("hbs");
 
