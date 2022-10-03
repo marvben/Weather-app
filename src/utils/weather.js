@@ -6,6 +6,7 @@ const getWeather = (place, callbackFunc) => {
     if (err) {
       callbackFunc("We could't connect to weather map app.", undefined);
     } else if (body.error) {
+      console.log(body);
       callbackFunc("Place not found, please try another location!", undefined);
     } else {
       callbackFunc(undefined, body);
