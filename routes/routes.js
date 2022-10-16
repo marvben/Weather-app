@@ -78,16 +78,4 @@ router.get("*", (req, res, next) => {
 
 module.exports = router;
 
-// router.get("/", function (req, res) {
-// getWeather("London", (error, data) => {
-//   if (error) {
-//     res.send({ Error: error });
-//   } else {
-//     res.send(data);
-//   }
-// });
-// Promise.resolve(weather).then(function (response) {
-//   res.send(response);
-// });
-// res.sendFile(path.join(__dirname, "../public/index.html"));
-// });
+
