@@ -26,7 +26,7 @@ app.use(routes);
 //   console.error(err.stack);
 //   res.status(500).send("Something broke!");
 // });
-const port = process.env.PORT || 443;
+const port = process.env.PORT;
 app.listen(port, function () {
-  console.log("Listening on port 3000");
+  console.log("Listening on port 443");
 });

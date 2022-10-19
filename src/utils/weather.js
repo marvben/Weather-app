@@ -1,7 +1,9 @@
+const { resolve } = require("path");
+require("dotenv").config({ path: resolve(__dirname, "../src/.env") });
 const request = require("request");
 
 const getWeather = (place, callbackFunc) => {
-  const url = `http://api.weatherstack.com/current?access_key=d9d313a921070423524da90a3aa9a036&query=${place}`;
+  const url = `http://api.weatherstack.com/current?access_key=${process.env.API_KEY}=${place}`;
   request({ url, json: true }, (err, { body } = {}) => {
     if (err) {
       callbackFunc("We could't connect to weather map app.", undefined);
